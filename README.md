@@ -117,7 +117,7 @@ Login at [http://localhost:8000](http://localhost:8000) with `admin` / `password
 Your Postgres data will be converted to Parquet and uploaded to MinIO.
 
 #### OLake Jobs Dashboard
-![OLake Jobs Dashboard](path/to/image1.png)
+![OLake Jobs Dashboard](img/4.png)
 *Screenshot showing the OLake UI with a completed sync job from PostgreSQL to MinIO*
 
 ---
@@ -151,7 +151,7 @@ spark-shell \
 ```
 
 #### Spark Shell Initialization
-![Spark Shell Startup](path/to/image2.png)
+![Spark Shell Startup](img/5.png)
 *Spark shell starting up with S3A configuration for MinIO access*
 
 Load parquet file from MinIO (replace with your actual path):
@@ -162,7 +162,7 @@ df.show()
 ```
 
 #### Schema Definition for JSON Parsing
-![Spark Schema Definition](path/to/image3.png)
+![Spark Schema Definition](img/3.png)
 *Defining the schema structure for parsing JSON data from the Parquet files*
 
 Parse the JSON data column into schema:
@@ -184,11 +184,11 @@ parsedDF.show()
 ```
 
 #### Raw Parquet Data Display
-![Raw Parquet Data](path/to/image4.png)
+![Raw Parquet Data](img/2.png)
 *Raw data loaded from the Parquet file showing the JSON structure in the data column*
 
 #### Parsed and Structured Data Output
-![Parsed Data Output](path/to/image5.png)
+![Parsed Data Output](img/1.png)
 *Final parsed data showing the structured orders with proper column names and data types*
 
 ---
